@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration</h1>
+    <form>
+        <table>
+            <tr>
+                
+                <td>
+                    <fieldset>
+                        <legend>General Information</legend>
+                        <table>
+                            <tr>
+                                <td><strong>First Name </strong></td>
+                                <td>: <input type="text" name="first_name"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Last Name</strong></td>
+                                <td>: <input type="text" name="last_name"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gender</strong></td>
+                                <td>: 
+                                    <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Father's Name</strong></td>
+                                <td>: <input type="text" name="father_name"> <br><input type="file" name="profile_pic"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mother's Name</strong></td>
+                                <td>: <input type="text" name="mother_name"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Blood Group</strong></td>
+                                <td>: 
+                                    <select name="blood_group">
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="O+">O+</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Religion</strong></td>
+                                <td>: 
+                                    <select name="religion">
+                                        <option value="islam">Islam</option>
+                                        <option value="hindu">Hinduism</option>
+                                        <option value="christian">Christianity</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+
+                <td>
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <table>
+                            <tr>
+                                <td><strong>Email</strong></td>
+                                <td>: <input type="email" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Phone/Mobile</strong></td>
+                                <td>: <input type="text" name="phone"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Website</strong></td>
+                                <td>: <input type="url" name="website"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Address</strong></td>
+                                <td>:
+                                    <fieldset>
+                                        <legend>Present Address</legend>
+                                        <select name="country">
+                                            <option value="bangladesh">Bangladesh</option>
+                                        </select>
+                                        <select name="city">
+                                            <option value="dhaka">Dhaka</option>
+                                        </select> 
+                                        <textarea name="street_address" rows="3" cols="20" placeholder="Road/Street/City"></textarea>
+                                        <input type="text" name="post_code" placeholder="Post Code">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+
+                <td>
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <table>
+                            <tr>
+                                <td><strong>Username</strong></td>
+                                <td>: <input type="text" name="username"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Password</strong></td>
+                                <td>: <input type="password" name="password"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Confirm Password</strong></td>
+                                <td>: <input type="password" name="confirm_password"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="submit" value="Register" style="padding: 4px 10px;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
