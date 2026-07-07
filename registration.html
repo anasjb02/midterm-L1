@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+
+
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+            margin-bottom: 30px;
+        }
+
+
+        table.main-layout {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 20px 0;
+        }
+
+        fieldset {
+            background-color: #eaeaea;
+            border: 1px solid #c0c0c0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #333;
+            background-color: #eaeaea;
+            padding: 3px 10px;
+            border-radius: 4px;
+        }
+
+        .account-container {
+            position: relative;
+        }
+
+        .account-bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("registration.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            z-index: 1;
+        }
+
+        .account-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .account-content strong {
+            color: #000;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        .form-table {
+            width: 100%;
+        }
+
+        .form-table td {
+            padding: 8px 4px;
+            vertical-align: middle;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 90%;
+            padding: 6px 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-sizing: border-box;
+        }
+
+        .address-box select {
+            width: 45%;
+            margin-right: 5%;
+            margin-bottom: 10px;
+        }
+
+        .address-box textarea {
+            width: 95%;
+            margin-bottom: 10px;
+            resize: none;
+        }
+
+        .address-box input[type="text"] {
+            width: 95%;
+        }
+
+        input[type="submit"] {
+            background-color: #4f6ca6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form>
+        <table class="main-layout" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+
+                <td valign="top" width="38%">
+                    <fieldset>
+                        <legend>General Information</legend>
+                        <table class="form-table">
+                            <tr>
+                                <td width="30%"><strong>First Name</strong></td>
+                                <td>: <input type="text" name="first_name"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Last Name</strong></td>
+                                <td>: <input type="text" name="last_name"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gender</strong></td>
+                                <td>:
+                                    <input type="radio" id="male" name="gender" value="male"> <label
+                                        for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female"> <label
+                                        for="female">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Father's Name</strong></td>
+                                <td>: <input type="text" name="father_name"> <br><br><input type="file"
+                                        name="profile_pic"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mother's Name</strong></td>
+                                <td>: <input type="text" name="mother_name"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Blood Group</strong></td>
+                                <td>:
+                                    <select name="blood_group">
+                                        <option value="A+">A+</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="O+">O+</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>Religion</strong></td>
+                                <td>:
+                                    <select name="religion">
+                                        <option value="islam">Islam</option>
+                                        <option value="hindu">Hinduism</option>
+                                        <option value="christian">Christianity</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+
+                <td valign="top" width="38%">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <table class="form-table">
+                            <tr>
+                                <td width="25%"><strong>Email</strong></td>
+                                <td>: <input type="email" name="email"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Phone/Mobile</strong></td>
+                                <td>: <input type="text" name="phone"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Website</strong></td>
+                                <td>: <input type="url" name="website"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" style="padding-top: 15px;"><strong>Address</strong></td>
+                                <td>:
+                                    <fieldset class="address-box">
+                                        <legend>Present Address</legend>
+                                        <select name="country">
+                                            <option value="bangladesh">bangladesh</option>
+                                        </select>
+                                        <select name="city">
+                                            <option value="dhaka">Dhaka</option>
+                                        </select>
+                                        <textarea name="street_address" rows="3"
+                                            placeholder="Road/Street/City"></textarea>
+                                        <input type="text" name="post_code" placeholder="Post Code">
+                                    </fieldset>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+
+                <td valign="top" width="24%">
+
+                    <div class="account-container">
+
+                        <div class="account-bg-image"></div>
+
+                        <fieldset style="background-color: transparent;" class="account-content">
+                            <legend>Account Information</legend>
+                            <table class="form-table">
+                                <tr>
+                                    <td><strong>Username</strong></td>
+                                    <td>: <input type="text" name="username"></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Password</strong></td>
+                                    <td>: <input type="password" name="password"></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Confirm Password</strong></td>
+                                    <td>: <input type="password" name="confirm_password"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                    </div>
+
+                    <table border="0" width="100%">
+                        <tr>
+                            <td>
+                                <input type="submit" value="Register">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
